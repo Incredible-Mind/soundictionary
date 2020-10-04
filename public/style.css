@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --webkit-font-smoothing: antialiased;
+}
+body, html{
+    font-family: 'Muli', sans-serif;
+    min-height: 100vh;
+}
+.container{
+    width: 1152px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+nav{
+    background: #553C9A;
+    color: #ffffffff;
+    padding: 1rem 0;
+}
+section.input{
+    padding: 100px;
+}
+h2{
+    text-align: center;
+    font-size: 36px;
+}
+.form_wrap{
+    display: flex;
+    justify-content: center;
+}
+.input_wrap{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+input{
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    min-width: 400px;
+    outline: none;
+    border-radius: 10px;
+}
+button{
+    background: #ffffffff;
+    color: #553C9A;
+    height: 100%;
+    font-size: 16px;
+    padding: 0 20px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: -1px;
+    border: 2px solid #553C9A;
+}
+button:hover{
+    background: #553C9A;
+    color: #ffffffff;
+    border: 2px solid #553C9A;
+}
+section.data{
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: -60px ;
+    text-align: center;
+}
+.loading{
+    font-size: 18px;
+    text-align: center;
+    position: absolute;
+    left: 45%;
+     display: none;
+}
+section.data p.def{
+    font-size: 20px;
+    color: #2D3748;
+    line-height: 1.6;
+}
+.suggested{
+    background: #B794F4F4;
+    color: #ffffffff;
+    padding: 2px 10px;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-top: 5px;
+    display: inline-block;
+}
+button:focus{
+    outline: none;
+}
+.audio{
+    margin-top: 20px;
+}
+@media(max-width:528px){
+    input{
+        min-width: 75px;
+    }
+}
+@media(max-width:620px){
+    input{
+        padding: 0 -2rem;
+        min-width: 150px;
+    }
+    h2{
+        text-align: center;
+        font-size: 18px;
+    }
+}
+@media(max-width:476px){
+    input{
+        padding: 0 -8rem;
+        height: 2rem;
+        width: 100px;
+    }
+    h2{
+        position: absolute;
+        left: 60px;
+        top: 8rem;
+    }
+}
+@media(max-width:396px){
+    input{
+        padding: 0 -2rem;
+        height: 2rem;
+        width: 75px;
+    }
+    h2{
+        position: absolute;
+        left: 0;
+        top: 8rem;
+    }
+}
+@media(max-width:388px){
+    h2{
+        position: absolute;
+        left: 10px;
+        top: 40;
+    }
+    
+}
